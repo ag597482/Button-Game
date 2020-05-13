@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>layout</title>
+    <style>
+ body {
+  background-image: url("bg.jpg");
+}
+      #score{
+          margin-left: 44em;
+          display: inline;
+      }
+      #scorein{
+          border:2px solid red ;
+          padding: 4px;
+      }
+      .comtainer{
+          margin: 30px;
+          padding: 20px;
+      }
+      #resultin{
+        border:2px solid red ;
+      }
+      #start{
+          margin-left: 18px;
+      }
+      button
+      {
+        height: 80px;
+        width: 80px;
+        
+        border-radius: 50%;
+        margin-left: 100px;
+        margin-top: 45px
+      }
+      #startStop
+      {
+        width: 120px;
+        margin-left:265px;
+        border-radius:10%;
+      }
+      #ss
+      {
+        margin-left: 400px;
+        font-size: 20px;
+      }
+      #result
+      {
+        margin-left: 400px;
+        font-size: 100px;
+      }
+      output{
+          margin-left: 68px;
+      }
+.container{
+    height: 300px;
+    /* width: 100%; */
+}
+
+#display{
+    width: 100%;
+    font-size: 100px;
+    text-align: center;
+    margin-left: 400px;
+    /* margin: 0px auto; */
+}
+
+.buttons{
+    text-align: center;
+}
+output
+{
+  margin-left: 950px;
+}
+    </style>
+
+<!--<link rel="stylesheet" href="styles.css">-->
+
+
+</head>
+<body >
+    <span id="score">
+        <!-- <h3> Score</h3> -->
+        <strong>Score</strong>
+        <span id="scorein">
+            00
+        </span>
+    </span>
+    <div class="comtainer" id="but">
+        <br>
+        <button id="b1" onclick="callfun(id)" >1</button>
+        <button id="b2" onclick="callfun(id)" >2</button>
+        <button id="b3" onclick="callfun(id)" >3</button>  
+       
+            <!-- <spam id="resultin" >  Your Score </spam> -->
+            <span class="container">
+
+                <span id="display">
+                    10
+                </span>
+                     
+            </span>
+        </span>     <br>
+        <button id="b4" onclick="callfun(id)">4</button>
+        <button id="b5" onclick="callfun(id)" >5</button>
+        <button id="b6" onclick="callfun(id)" >6</button>  
+         <span id="clock"> 
+          <strong id="ss">SCORE CARD</strong> 
+       
+
+        <br>
+        <button id="b7" onclick="callfun(id)" >7</button>
+        <button id="b8" onclick="callfun(id)" >8</button>
+        <button id="b9" onclick="callfun(id)" >9</button>
+         <span class="box" id="box1">
+            <span> 
+                <span id="result"> 00 </span>
+            </span>
+        </span>
+        
+        <br>
+        <button id="startStop" onclick="startStop()">  Start</button>
+       
+       <br>
+        <span id="rules">
+            
+            
+            <output id="t1">score < 7 : SLOW</output> <br>
+            <output id="t2">score (7-9) : MEDIUM</output> <br>
+            <output id="t3">score (10-12) : FAST</output> <br>
+            <output id="t4">score (13-14) : ULTRA-FAST</output> <br>
+            <output id="t5">score >14 : FROM ANOTHER PLANET</output> <br>
+            
+        </span>
+    </div>
+    <script type="text/javascript" src="back.js"></script>
+
+    
+    
+</body>
+</html>
